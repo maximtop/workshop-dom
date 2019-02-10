@@ -13,6 +13,10 @@ class Node {
       return `${key}="${value}"`;
     }).join(' ');
   }
+
+  isShort() {
+    return this.toString().length <= 10;
+  }
 }
 
 export default Node;
