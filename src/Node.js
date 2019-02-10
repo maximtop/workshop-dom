@@ -1,6 +1,6 @@
 class Node {
-  constructor(tag, attributes = {}) {
-    this.tag = tag;
+  constructor(tagName, attributes = {}) {
+    this.tagName = tagName;
     this.attributes = attributes;
   }
 
