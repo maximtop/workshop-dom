@@ -1,13 +1,12 @@
 class Node {
-  constructor(tag, attributes = {}, content = '') {
+  constructor(tag, attributes = {}) {
     this.tag = tag;
     this.attributes = attributes;
-    this.content = content;
   }
 
   attributesToString() {
     if (!this.attributes) {
-      return '';
+      return undefined;
     }
     return Object.keys(this.attributes).map((key) => {
       const value = this.attributes[key];

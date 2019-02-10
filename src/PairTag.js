@@ -2,14 +2,14 @@ import Node from './Node';
 
 class PairTag extends Node {
   constructor(tag, attributes, content) {
-    super(tag, attributes, content);
+    super(tag, attributes);
+    this.content = content;
   }
 
   toString() {
-    const attributesString = this.attributesToString();
-    return attributesString.length > 0
-      ? `<${this.tag} ${this.attributesToString()}>${this.content}</${this.tag}>`
-      : `<${this.tag}>${this.content}</${this.tag}>`;
+    const attributesString = this.attributesToString() ? ` ${this.attributesToString()}` : '';
+    const content = this.content ? this.content : '';
+    return `<${this.tag}${attributesString}>${content}</${this.tag}>`;
   }
 }
 

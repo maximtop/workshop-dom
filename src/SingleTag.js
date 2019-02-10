@@ -6,8 +6,8 @@ class SingleTag extends Node {
   }
 
   toString() {
-    const attributesString = this.attributesToString();
-    return attributesString.length > 0 ? `<${this.tag} ${this.attributesToString()}>` : `<${this.tag}>`;
+    const attributesString = this.attributesToString() ? ` ${this.attributesToString()}` : '';
+    return `<${this.tag}${attributesString}>`;
   }
 }
 
