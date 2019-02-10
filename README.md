@@ -1,4 +1,4 @@
-# nodejs-package
+# workshop dom nodes
 
 ## Setup
 
