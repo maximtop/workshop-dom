@@ -1,5 +1,4 @@
-import PairTag from '../src/PairTag';
-import SingleTag from '../src/SingleTag';
+import { PairTag, SingleTag } from '../src';
 
 test('PairTag', () => {
   const tag = new PairTag('div', { class: 'big' }, 'test');
