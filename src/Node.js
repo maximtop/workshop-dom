@@ -6,7 +6,7 @@ class Node {
 
   attributesToString() {
     if (!this.attributes) {
-      return undefined;
+      return '';
     }
     return Object.keys(this.attributes).map((key) => {
       const value = this.attributes[key];

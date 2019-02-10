@@ -7,7 +7,7 @@ class PairTag extends Node {
   }
 
   toString() {
-    const attributesString = this.attributesToString() ? ` ${this.attributesToString()}` : '';
+    const attributesString = this.attributesToString().length ? ` ${this.attributesToString()}` : '';
     const content = this.content ? this.content : '';
     return `<${this.tag}${attributesString}>${content}</${this.tag}>`;
   }
